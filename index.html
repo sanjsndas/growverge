@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growverge - Advanced Gardening Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a934a;
+            --secondary: #7ab97a;
+            --accent: #2e7d32;
+            --dark: #2e4a2e;
+            --light: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9f7;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(74, 147, 74, 0.2);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .testimonial-card:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .animate-grow {
+            animation: grow 2s infinite alternate;
+        }
+        
+        @keyframes grow {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        
+        .consultant-section {
+            background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+        }
+        
+        .tip-card {
+            border-left: 4px solid var(--primary);
+            background-color: white;
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a934a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-green-800 flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i> Growverge
+                        </span>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex space-x-8">
+                           <a href="index.html" tabindex="0"aria-current="page">Home</a>
+                           <a href="privacy.html" tabindex="0">Privacy</a>
+                           <a href="terms.html" tabindex="0">Terms & conditons</a>
+                           <a href="cookies.html"tabindex="0">Cookies</a>
+                           <a href="contact.html" tabindex="0">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <button class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md text-sm font-medium flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Book Consultation
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-grow">Cultivate Your Dream Garden</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">At Growverge, we believe every space has potential to become a thriving green oasis. Our team of expert horticulturists, landscape designers, and organic gardening specialists combine decades of experience with cutting-edge techniques to transform ordinary yards into extraordinary landscapes. Whether you're dreaming of a bountiful vegetable garden, a serene Japanese-inspired retreat, or a pollinator-friendly paradise, our comprehensive gardening solutions are tailored to your unique space, climate, and vision. With our client-centered approach and commitment to sustainable practices, we'll guide you through every step of the gardening journey, from initial soil preparation to ongoing maintenance and seasonal transformations.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-md text-lg font-semibold flex items-center mx-auto">
+                    <i class="fas fa-seedling mr-2"></i> Explore Services
+                </button>
+                <button class="bg-white hover:bg-gray-100 text-green-800 px-8 py-3 rounded-md text-lg font-semibold flex items-center mx-auto">
+                    <i class="fas fa-calendar-alt mr-2"></i> Schedule Visit
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="mb-8 lg:mb-0">
+                    <div class="relative rounded-lg overflow-hidden shadow-xl h-96">
+                        <img class="w-full h-full object-cover" src="p1.png" alt="Our Team">
+                        <div class="absolute inset -0 bg-black/50 flex items-center justify-center">
+                            <h2 class="text-3xl font-bold text-white">Our Team</h2>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">About Growverge</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 2015, Growverge has been at the forefront of innovative gardening solutions, combining traditional techniques with modern technology to create sustainable, beautiful outdoor spaces. Our team consists of passionate horticulturists, landscape architects, and gardening enthusiasts who are dedicated to helping you achieve your gardening dreams. We believe in the power of plants to enhance our lives and the environment, and we strive to educate our clients on the benefits of sustainable gardening practices. Our commitment to quality and customer satisfaction has earned us a loyal client base and numerous accolades in the gardening community.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-green-700 text-white">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">Our Mission</p>
+                                <p class="mt-1 text-gray-600">To empower homeowners and businesses to create and maintain thriving green spaces that benefit both people and the planet. We aim to inspire a love for gardening and a deeper connection to nature through our services and educational resources.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-green-700 text-white">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">Our Vision</p>
+                                <p class="mt-1 text-gray-600">A world where every space, no matter how small, contributes to biodiversity, sustainability, and human wellbeing. We envision communities that prioritize green spaces and recognize their importance in urban planning and personal health.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="flex items-center justify-center h-6 w-6 rounded-md bg-green-700 text-white">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-lg font-medium text-gray-900">Our Achievements</p>
+                                <p class="mt-1 text-gray-600">Recognized by the National Gardening Association for excellence in sustainable landscaping practices in 2020 and 2022. We have also been featured in various gardening publications for our innovative approaches to garden design and maintenance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md text-lg font-semibold">Meet Our Team</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Comprehensive Gardening Services</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Growverge offers a complete suite of professional gardening services designed to meet every need from initial planting to ongoing care. Our team of certified professionals brings a wealth of knowledge and experience to every project, ensuring optimal results tailored to your specific growing conditions and aesthetic preferences. From urban balcony gardens to sprawling country estates, we provide customized solutions that combine beauty, functionality, and ecological sustainability.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="s1.jpeg" alt="Organic Gardening">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-semibold text-white">Organic Gardening</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Our organic gardening services go beyond simply avoiding chemicals - we create complete ecosystems where plants thrive naturally. We begin with comprehensive soil testing to determine pH levels, nutrient content, and microbial activity. Based on these results, we develop customized soil amendment plans using compost, green manures, and natural mineral supplements. Our integrated pest management approach combines companion planting, biological controls, and physical barriers to maintain plant health without synthetic pesticides. We'll design a productive yet beautiful vegetable garden, herb garden, or fruit orchard tailored to your space, sunlight conditions, and culinary preferences. Our organic specialists will teach you the principles of regenerative gardening, ensuring your soil becomes more fertile each season while yielding abundant, nutrient-dense produce. Whether you want to grow heirloom tomatoes, medicinal herbs, or cut flowers, our organic methods will help you achieve vigorous, chemical-free results.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Complete soil analysis and custom amendment plan</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Natural pest and disease management strategies</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Companion planting and polyculture design</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Seasonal planting calendar development</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Organic fertilization and composting systems</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Water-wise irrigation planning</li>
+                        </ul>
+                        <button class="text-green-700 font-semibold hover:text-green-900 flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="s2.jpeg" alt="Landscape Design">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-semibold text-white">Landscape Design</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Our landscape design services create outdoor living spaces that are both breathtakingly beautiful and perfectly functional. Beginning with a comprehensive site analysis, we consider sun patterns, soil conditions, drainage, existing vegetation, and your aesthetic preferences to develop a cohesive design vision. Our designers blend principles of color theory, texture play, and seasonal interest with practical considerations like traffic flow and maintenance requirements. We specialize in creating themed gardens (English cottage, Mediterranean, Japanese Zen) as well as contemporary designs featuring clean lines and bold plant combinations. Each design includes detailed planting plans specifying plant varieties, quantities, and placement for optimal growth and visual impact. For larger projects, we create 3D renderings so you can virtually "walk through" your future garden before installation begins. Our designs incorporate sustainable features like rain gardens, permeable paving, and native plant communities that support local wildlife while reducing water use and maintenance.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Comprehensive site analysis and measurement</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Custom design concepts tailored to your vision</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Detailed planting plans with species selection</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Hardscape design including paths, patios and water features</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> 3D renderings and virtual walkthroughs</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Sustainable and water-wise design solutions</li>
+                        </ul>
+                        <button class="text-green-700 font-semibold hover:text-green-900 flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg -white rounded-lg shadow-md overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover" src="s3.jpeg" alt="Garden Maintenance">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-semibold text-white">Garden Maintenance</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Our garden maintenance services ensure that your outdoor space remains vibrant and healthy throughout the year. We offer tailored maintenance plans that include seasonal clean-ups, pruning, mulching, and fertilization to keep your plants thriving. Our team is trained in the latest horticultural practices, ensuring that your garden receives the best care possible. We also provide pest and disease management services, utilizing organic methods to protect your plants without harming beneficial insects. Whether you need weekly, bi-weekly, or monthly visits, we can customize a maintenance schedule that fits your needs and budget. Our goal is to help you enjoy your garden without the stress of upkeep, allowing you to focus on what you love most about your outdoor space.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Regular lawn care including mowing and edging</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Seasonal planting and replanting services</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Comprehensive weed control strategies</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Organic pest management and disease prevention</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Irrigation system installation and maintenance</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-600 mr-2"></i> Customized maintenance schedules to fit your needs</li>
+                        </ul>
+                        <button class="text-green-700 font-semibold hover:text-green-900 flex items-center">
+                            Learn more <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <button class="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-md text-lg font-semibold">
+                    View All Services
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Consultants Section -->
+    <section id="consultants" class="py-20 consultant-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Expert Consultants</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">With over 60,000 words of gardening knowledge, our consultants are ready to help you grow. Each member of our team brings unique expertise and a passion for gardening, ensuring that you receive the best advice and support tailored to your specific needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Consultant 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                   
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">John Doe</h3>
+                        <p class="text-gray-600 mb-4">Expert in organic gardening and sustainable practices. John has over 10 years of experience in transforming gardens into eco-friendly spaces. He specializes in soil health, pest management, and crop rotation techniques that enhance garden productivity while preserving the environment.</p>
+                        <button class="text-green-700 font-semibold hover:text-green-900">Learn more →</button>
+                    </div>
+                </div>
+                
+                <!-- Consultant 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Jane Smith</h3>
+                        <p class="text-gray-600 mb-4">Specializing in landscape design, Jane brings creativity and innovation to every project, ensuring a perfect blend of aesthetics and functionality. With a keen eye for detail, she designs gardens that are not only beautiful but also sustainable, incorporating native plants and water-efficient practices.</p>
+                        <button class="text-green-700 font-semibold hover:text-green-900">Learn more →</button>
+                    </div>
+                </div>
+                
+                <!-- Consultant 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Emily Johnson</h3>
+                        <p class="text-gray-600 mb-4">With a passion for horticulture, Emily provides expert advice on plant care and garden maintenance, ensuring your garden thrives. She is particularly knowledgeable about seasonal planting and pest control, helping clients achieve lush, healthy gardens year-round.</p>
+                        <button class="text-green-700 font-semibold hover:text-green-900">Learn more →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Our Clients Say</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Hear from our satisfied customers about their experiences with Growverge. We take pride in our work and strive to exceed our clients' expectations with every project.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"Growverge transformed my backyard into a beautiful garden. Their team was professional and knowledgeable! I couldn't be happier with the results!"</p>
+                    <h4 class="font-semibold text-gray-800">Sarah Lee</h4>
+                    <p class="text-gray-500">Homeowner</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"The organic gardening services were top-notch. I now have a thriving vegetable garden that provides fresh produce for my family!"</p>
+                    <h4 class="font-semibold text-gray-800">Michael Brown</h4>
+                    <p class="text-gray-500">Gardening Enthusiast</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card p-6 rounded-lg shadow-md">
+                    <p class="text-gray-600 mb-4">"Their landscape design services exceeded my expectations. I highly recommend Growverge for anyone looking to enhance their outdoor space!"</p>
+                    <h4 class="font-semibold text-gray-800">Jessica White</h4>
+                    <p class="text-gray-500">Business Owner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gardening Tips Section -->
+    <section id="tips" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Gardening Tips</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">Expert advice to help you cultivate a thriving garden. Our tips cover a wide range of topics, from soil health to pest management, ensuring you have the knowledge you need to succeed.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tip 1 -->
+                <div class="tip-card p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Choose the Right Plants</h3>
+                    <p class="text-gray-600">Select plants that are suitable for your climate and soil type to ensure a healthy garden. Research native plants that thrive in your area and consider their growth habits and maintenance needs.</p>
+                </div>
+                
+                <!-- Tip 2 -->
+                <div class="tip-card p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Water Wisely</h3>
+                    <p class="text-gray-600">Water your plants early in the morning or late in the evening to minimize evaporation. Consider installing a drip irrigation system to deliver water directly to the roots where it's needed most.</p>
+                </div>
+                
+                <!-- Tip 3 -->
+                <div class="tip-card p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Practice Crop Rotation</h3>
+                    <p class="text-gray-600">Rotate your crops each season to prevent soil depletion and reduce pest problems. This practice helps maintain soil fertility and disrupts the life cycles of pests and diseases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Get in Touch</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">We'd love to hear from you! Contact us for any inquiries or to schedule a consultation. Our team is here to assist you with all your gardening needs.</p>
+            </div>
+            
+            <form class="max-w-lg mx-auto">
+                <div class="grid grid-cols-1 gap-6">
+                    <input type="text" placeholder="Your Name" class="border border-gray-300 rounded-md p-4" required>
+                    <input type="email" placeholder="Your Email" class="border border-gray-300 rounded-md p-4" required>
+                    <textarea placeholder="Your Message" class="border border-gray-300 rounded-md p-4 h-32" required></textarea>
+                    <button type="submit" class="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md text-lg font-semibold">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-white">© 2023 Growverge. All rights reserved.</p>
+            <p class="text-white">Address: 40 E 7th St, New York, NY 10003, USA</p>
+            <p class="text-white">Disclaimer: The information provided on this website is for general informational purposes only and should not be considered professional advice. Always consult with a qualified professional for specific gardening needs.</p>
+            <p class="text-white">Customer Satisfaction: We strive to ensure that our clients are completely satisfied with our

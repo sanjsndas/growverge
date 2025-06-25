@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Growverge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a934a;
+            --secondary: #7ab97a;
+            --accent: #2e7d32;
+            --dark: #2e4a2e;
+            --light: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9f7;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a934a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .terms-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .highlight {
+            background-color: #f0fff4;
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i> Growverge
+                        </a>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex space-x-8">
+                            <a href="index.html" tabindex="0">Home</a>
+                           <a href="privacy.html" tabindex="0">Privacy</a>
+                           <a href="terms.html" tabindex="0"aria-current="page">Terms & conditons</a>
+                           <a href="cookies.html"tabindex="0">Cookies</a>
+                           <a href="contact.html" tabindex="0">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md text-sm font-medium flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Home</a>
+                <a href="privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Privacy</a>
+                <a href="terms.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-800 bg-green-50">Terms</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Terms of Service</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">The legal agreement between you and Growverge</p>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose lg:prose-xl max-w-none">
+                <p class="text-gray-600 mb-8">Last Updated: January 1, 2023</p>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Introduction</h2>
+                    <p class="text-gray-600">These Terms of Service ("Terms") govern your use of the Growverge website and services. By accessing or using our services, you agree to be bound by these Terms and our Privacy Policy. If you disagree with any part of these Terms, you must not use our services. These Terms represent a legally binding agreement between you ("User") and Growverge ("we", "us", or "our"). We may modify these Terms at any time, and continued use constitutes acceptance of modified terms.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Services Description</h2>
+                    <p class="text-gray-600">Growverge provides professional gardening and landscaping services including design, installation, maintenance, and consultation. Our services are available to residential and commercial clients within our service areas. Specific services, prices, and terms will be outlined in individual service agreements. We reserve the right to modify or discontinue any service without notice. We make no guarantee about availability of specific services in all locations or for all property types.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">3. Eligibility</h2>
+                    <p class="text-gray-600">To use our services, you must be at least 18 years old and have legal capacity to enter into contracts. By using our services, you represent that you meet these requirements. We may refuse service to anyone for any reason at any time. Certain services may have additional eligibility requirements, such as property ownership or authorization to make landscape decisions for a property. You are responsible for ensuring you have proper authorization for services performed on any property.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Account Registration</h2>
+                    <p class="text-gray-600">To access certain services, you may need to create an account. You must provide accurate, complete registration information and keep it updated. You are responsible for maintaining confidentiality of your account credentials and for all activities under your account. You must immediately notify us of any unauthorized use of your account. We reserve the right to suspend or terminate accounts that provide false information or that we suspect of unauthorized or fraudulent activity.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Service Agreements</h2>
+                    <p class="text-gray-600">Specific services will be governed by separate service agreements outlining scope of work, pricing, timeline, and other project-specific terms. These Terms apply to all service agreements unless specifically modified in writing. Conflicts between these Terms and service agreements will generally be resolved in favor of the service agreement terms. Service agreements may require deposits or prepayment as specified in the agreement. We may require signed agreements before commencing work.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Pricing and Payments</h2>
+                    <p class="text-gray-600">Service prices are quoted in proposals and service agreements. Prices are subject to change until a service agreement is executed. We accept various payment methods including credit cards, checks, and electronic transfers. Payment terms will be specified in service agreements, with balances typically due upon completion unless otherwise agreed. Late payments may incur interest at 1.5% per month or the maximum legal rate. You are responsible for all taxes associated with services unless we expressly agree otherwise.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Cancellation Policy</h2>
+                    <p class="text-gray-600">Cancellation terms vary by service type. For recurring services, we typically require at least 48 hours notice to cancel without penalty. Project cancellations may incur fees based on work completed and materials purchased. Special order materials are generally non-refundable. Cancellation requests must be made in writing. We reserve the right to cancel services for nonpayment, safety concerns, or breach of these Terms with appropriate notice unless immediate termination is required.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Rescheduling</h2>
+                    <p class="text-gray-600">Service appointments may be rescheduled with at least 24 hours notice at no charge. Repeated rescheduling or missed appointments may result in cancellation or additional fees. Inclement weather or other conditions beyond our control may require rescheduling with no penalty. We will make reasonable efforts to accommodate your preferred schedule but cannot guarantee specific dates or times. Rescheduled services are subject to availability.</p>
+                </div>
+                
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Refunds</h2>
+                    <p class="text-gray-600">Refund eligibility depends on the service type and circumstances. Completed services are generally non-refundable. Prepaid services not yet performed may be refundable minus any non-refundable deposits. Materials purchased specifically for your project are typically non-refundable. Refund requests must be submitted in writing within 30 days of service. We will process approved refunds within 30 business days. Special promotions or discounted services may have specific refund terms as stated in the offer.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Property Access</h2>
+                    <p class="text-gray-600">You grant us reasonable access to perform agreed services at the specified property location. You must provide safe access to all service areas and disclose any hazards (underground utilities, pests, etc.). We may require easements or permissions for certain services. You are responsible for obtaining any required homeowner association approvals. We are not responsible for damage caused by pre-existing property conditions that were not disclosed to us before service began.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Property Changes</h2>
+                    <p class="text-gray-600">You must notify us of any changes to your property that could affect our services (construction, utility work, landscape changes, etc.). We are not responsible for maintaining elements we didn't install without a maintenance agreement. Our work may require modifications to existing landscape features. We will discuss significant changes with you before implementation when possible. Changes requested after work begins may incur additional charges and delay completion.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">12. Plant Health and Survival</h2>
+                    <p class="text-gray-600">We guarantee proper installation of plants according to horticultural best practices. However, plant survival depends on many factors beyond our control including weather, pests, disease, and maintenance. Limited warranties on plants may be available from growers. We may offer replacement plants at reduced cost within specified periods if proper care was followed. You are responsible for proper watering and maintenance after installation unless covered by a maintenance agreement.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">13. Maintenance Services</h2>
+                    <p class="text-gray-600">Maintenance services are tailored to your landscape's needs and may vary seasonally. Maintenance frequency is based on our professional assessment of your landscape's requirements. Services may include pruning, fertilization, pest control, irrigation checks, and cleanup. Specific services included in your maintenance plan will be detailed in your agreement. Additional services not covered by your agreement may be available for additional fees. We recommend annual re-evaluations of maintenance needs.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">14. Design Services</h2>
+                    <p class="text-gray-600">Landscape designs are custom creations based on your property and preferences. Design fees cover creation of plans, not implementation unless specified. We retain intellectual property rights to designs but grant you rights to implement approved designs on your property. Design revisions may be limited by your agreement. Final designs represent our professional recommendations but may require adaptation during installation due to site conditions. We cannot guarantee exact replication of conceptual images.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">15. Installation Services</h2>
+                    <p class="text-gray-600">Installation timelines are estimates subject to weather, material availability, and other factors. We will provide updates if significant delays occur. Project phases may need to be rescheduled due to conditions encountered during work. You must provide clear access to work areas and ensure pets are secured. Basic cleanup is included but some debris may require separate disposal services. Final walkthroughs should be completed before final payment to identify any touch-ups needed.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">16. Consultation Services</h2>
+                    <p class="text-gray-600">Consultations provide professional advice but implementation is at your discretion. Recommendations are based on information you provide and our observations during the consultation. We cannot guarantee results from following our recommendations as many factors affect plant health and landscape outcomes. Consultation fees cover our time and expertise, not any follow-up services unless specified. More complex issues may require additional consultations or diagnostic services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">17. Online Services</h2>
+                    <p class="text-gray-600">Our website and online tools provide information and convenience features but do not replace professional consultations. Online plant recommendations and other services are based on general guidelines and may not account for specific site conditions. We encourage users to seek professional advice for complex landscaping needs. Access to online services may require account registration and compliance with our terms. We reserve the right to modify or discontinue online services at any time without notice. Your use of online services is at your own risk, and we are not liable for any errors or omissions in the information provided.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">18. User Content</h2>
+                    <p class="text-gray-600">You may have the opportunity to submit content, including reviews, comments, and photos, to our website. By submitting content, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, reproduce, modify, publish, and distribute such content. You represent that you own or have the necessary rights to the content you submit. We reserve the right to remove any content that violates these Terms or is deemed inappropriate at our discretion.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">19. Privacy Policy</h2>
+                    <p class="text-gray-600">Your privacy is important to us. Our Privacy Policy outlines how we collect, use, and protect your personal information. By using our services, you consent to the collection and use of your information as described in our Privacy Policy. We may update our Privacy Policy from time to time, and we will notify you of any significant changes. Continued use of our services after changes constitutes acceptance of the new Privacy Policy.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">20. Indemnification</h2>
+                    <p class="text-gray-600">You agree to indemnify, defend, and hold harmless Growverge, its affiliates, and their respective officers, directors, employees, and agents from any claims, losses, liabilities, damages, costs, or expenses (including reasonable attorneys' fees) arising out of or related to your use of our services, your violation of these Terms, or your violation of any rights of another party. This obligation will survive termination of your use of our services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">21. Limitation of Liability</h2>
+                    <p class="text-gray-600">To the fullest extent permitted by law, Growverge shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our services, including but not limited to loss of profits, data, or goodwill. Our total liability for any claims arising out of or related to these Terms or our services shall not exceed the amount paid by you for the services in question. Some jurisdictions do not allow the exclusion or limitation of liability, so these limitations may not apply to you.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">22. Governing Law</h2>
+                    <p class="text-gray-600">These Terms shall be governed by and construed in accordance with the laws of the state in which Growverge operates, without regard to its conflict of law principles. You agree to submit to the personal jurisdiction of the state and federal courts located in that state for the resolution of any disputes arising out of or relating to these Terms or your use of our services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">23. Dispute Resolution</h2>
+                    <p class="text-gray-600">In the event of a dispute, you agree to first attempt to resolve the dispute informally by contacting us. If the dispute cannot be resolved informally, you agree to resolve any claims through binding arbitration in accordance with the rules of the American Arbitration Association. You waive any right to a jury trial or to participate in a class action. The arbitration shall take place in the state where Growverge operates, and the arbitrator's decision shall be final and binding.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">24. Changes to Terms</h2>
+                    <p class="text-gray-600">We reserve the right to modify these Terms at any time. We will notify you of any changes by posting the new Terms on our website. Your continued use of our services after any changes constitutes acceptance of the new Terms. It is your responsibility to review these Terms periodically for updates. If you do not agree to the modified Terms, you must stop using our services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">25. Severability</h2>
+                    <p class="text-gray-600">If any provision of these Terms is found to be invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall remain in full force and effect. The invalid or unenforceable provision shall be deemed modified to the minimum extent necessary to make it valid and enforceable. These Terms constitute the entire agreement between you and Growverge regarding your use of our services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">26. Waiver</h2>
+                    <p class="text-gray-600">No waiver of any term or condition of these Terms shall be deemed a further or continuing waiver of such term or any other term, and any failure of Growverge to assert a right or provision under these Terms shall not constitute a waiver of such right or provision. Any waiver must be in writing and signed by an authorized representative of Growverge.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">27. Force Majeure</h2>
+                    <p class="text-gray-600">Growverge shall not be liable for any failure to perform its obligations under these Terms if such failure results from any cause beyond Growverge's reasonable control, including, but not limited to, mechanical, electronic, or communications failure or degradation. In the event of a force majeure event, we will make reasonable efforts to resume performance as soon as possible.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">28. Contact Information</h2>
+                    <p class="text-gray-600">If you have any questions about these Terms, please contact us at:</p>
+                    <p class="text-gray-600">Growverge<br>123 Greenway Drive<br>Garden City, ST 12345<br>Phone: (123) 456-7890<br>Email: support@growverge.com</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">29. Additional Terms</h2>
+                    <p class="text-gray-600">Certain services may have additional terms that apply. These additional terms will be provided to you at the time of service or in your service agreement. If there is a conflict between these Terms and any additional terms, the additional terms will govern for that specific service. You are responsible for reviewing any additional terms that may apply to your use of our services.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">30. Assignment</h2>
+                    <p class="text-gray-600">You may not assign or transfer these Terms or any rights or obligations hereunder without our prior written consent. We may assign or transfer these Terms at any time without notice to you. These Terms will bind and inure to the benefit of the parties and their respective successors and permitted assigns.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">31. Headings</h2>
+                    <p class="text-gray-600">The headings in these Terms are for convenience only and shall not affect the interpretation of these Terms. They do not constitute legal definitions or limitations of the terms contained herein.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">32. Electronic Communications</h2>
+                    <p class="text-gray-600">By using our services, you consent to receive electronic communications from us. We will communicate with you by email or by posting notices on our website. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically will satisfy any legal requirement that such communications be in writing.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">33. Feedback</h2>
+                    <p class="text-gray-600">We welcome your feedback regarding our services. Any feedback you provide will be considered non-confidential and we will be free to use such feedback without any obligation to you. We appreciate your input and strive to improve our services based on user feedback.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">34. Third-Party Links</h2>
+                    <p class="text-gray-600">Our website may contain links to third-party websites that are not owned or controlled by Growverge. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites. We encourage you to read the terms and conditions and privacy policies of any third-party websites you visit.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">35. Social Media</h2>
+                    <p class="text-gray-600">We may maintain a presence on social media platforms. Your interactions with us on social media are governed by the terms and policies of those platforms. We encourage you to engage with us and share your experiences, but we are not responsible for any content posted by third parties on our social media pages.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">36. Marketing Communications</h2>
+                    <p class="text-gray-600">By providing your contact information, you consent to receive marketing communications from us. You may opt-out of receiving marketing communications at any time by following the unsubscribe instructions included in our emails or by contacting us directly. We respect your privacy and will not share your information with third parties without your consent.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">37. User Responsibilities</h2>
+                    <p class="text-gray-600">As a user of our services, you agree to comply with all applicable laws and regulations. You are responsible for your conduct while using our services and for any content you submit. You agree not to engage in any activity that could harm our services or disrupt the experience of other users. We reserve the right to take appropriate action against users who violate these Terms.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">38. Security</h2>
+                    <p class="text-gray-600">We take reasonable measures to protect your information and our services from unauthorized access, but no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security. You are responsible for maintaining the confidentiality of your account credentials and for any activities that occur under your account.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">39. Termination of Services</h2>
+                    <p class="text-gray-600">We reserve the right to terminate or suspend your access to our services at any time, without notice, for conduct that we believe violates these Terms or is harmful to other users or our services. Upon termination, your right to use our services will cease immediately. We may retain your information as required by law or for legitimate business purposes.</p>
+                </div>
+
+                <div class="terms-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">40. Acknowledgment</h2>
+                    <p class="text-gray-600">By using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not use our services. Your continued use of our services after any changes to these Terms constitutes acceptance of the new Terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">© 2023 Growverge. All rights reserved.</p>
+            <p class="text-sm">123 Greenway Drive, Garden City, ST 12345 | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Growverge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a934a;
+            --secondary: #7ab97a;
+            --accent: #2e7d32;
+            --dark: #2e4a2e;
+            --light: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9f7;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a934a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .cookie-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .highlight {
+            background-color: #f0fff4;
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+        }
+        
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--dark);
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .cookie-consent {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        
+        .btn-accept {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-decline {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i> Growverge
+                        </a>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex space-x-8">
+                            <a href="index.html" tabindex="0">Home</a>
+                           <a href="privacy.html" tabindex="0">Privacy</a>
+                           <a href="terms.html" tabindex="0">Terms & conditons</a>
+                           <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+                           <a href="contact.html" tabindex="0">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md text-sm font-medium flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round", stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Home</a>
+                <a href="privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Privacy</a>
+                <a href="terms.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Terms</a>
+                <a href="cookies.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-800 bg-green-50">Cookies</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Cookie Policy</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">How we use cookies and similar technologies on our website</p>
+        </div>
+    </section>
+
+    <!-- Cookie Policy Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose lg:prose-xl max-w-none">
+                <p class="text-gray-600 mb-8">Last Updated: January 1, 2023</p>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">1. What Are Cookies?</h2>
+                    <p class="text-gray-600">Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and to provide information to the website owners. Cookies typically contain anonymous information such as a unique identifier, the site name, and some digits and numbers. They are used to remember your preferences and improve your browsing experience. Cookies can be categorized into different types, including session cookies, which are temporary and expire once you close your browser, and persistent cookies, which remain on your device for a set period or until you delete them. Understanding cookies is essential for managing your privacy and security online.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Types of Cookies We Use</h2>
+                    <p class="text-gray-600">We use several types of cookies on our website to enhance user experience. These include essential cookies, which are necessary for the website to function correctly, performance cookies that help us understand how visitors interact with our site, and functionality cookies that allow us to remember your preferences. Additionally, we may use targeting cookies to deliver relevant advertisements to you based on your interests. Each type of cookie serves a specific purpose and contributes to the overall functionality of our website.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">3. How We Use Cookies</h2>
+                    <p class="text-gray-600">Cookies help us improve our website by enabling us to analyze user behavior and preferences. We use cookies to track user sessions, remember login information, and personalize content based on your interests. This information allows us to enhance our services and provide a more tailored experience for our users. By understanding how our website is used, we can make informed decisions about future improvements and updates.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Third-Party Cookies</h2>
+                    <p class="text-gray-600">In addition to our own cookies, we may also use third-party cookies from trusted partners. These cookies are set by domains other than our website and are used for various purposes, such as analytics, advertising, and social media integration. Third-party cookies help us understand user behavior across different websites and enable us to deliver targeted advertisements. You can manage your preferences for third-party cookies through your browser settings.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Managing Cookies</h2>
+                    <p class="text-gray-600">You have the right to accept or decline cookies. Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies if you prefer. Please note that declining cookies may affect your ability to use certain features of our website. For detailed instructions on how to manage cookies in your browser, please refer to the help section of your browser or visit the official website of your browser provider.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Cookie Consent</h2>
+                    <p class="text-gray-600">By using our website, you consent to the use of cookies in accordance with this Cookie Policy. We may also ask for your explicit consent to use certain types of cookies, particularly those that are not strictly necessary for the functioning of the website. You can withdraw your consent at any time by adjusting your cookie preferences in your browser settings or by contacting us directly.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Changes to Our Cookie Policy</h2>
+                    <p class="text-gray-600">We may update our Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or by other means. We encourage you to review this Cookie Policy periodically to stay informed about our use of cookies and your options regarding cookies.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Contact Us</h2>
+                    <p class="text-gray-600">If you have any questions or concerns about our Cookie Policy or our use of cookies, please feel free to contact us. You can reach us via email at info@growverge.com or by phone at (123) 456-7890. We are committed to addressing your inquiries and ensuring your privacy and security while using our website.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Cookie Policy for Children</h2>
+                    <p class="text-gray-600">Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Cookie Duration</h2>
+                    <p class="text-gray-600">The duration for which cookies remain on your device varies depending on the type of cookie. Session cookies expire once you close your browser, while persistent cookies remain on your device for a specified period or until you delete them. We regularly review the cookies we use and update our practices to ensure compliance with applicable regulations.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. Cookie Analytics</h2>
+                    <p class="text-gray-600">We use cookies to gather analytics data that helps us understand how users interact with our website. This data includes information about the pages visited, the time spent on each page, and the links clicked. By analyzing this data, we can identify trends and areas for improvement, ultimately enhancing the user experience on our site.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">12. Advertising Cookies</h2>
+                    <p class="text-gray-600">Advertising cookies are used to deliver advertisements that are relevant to you and your interests. These cookies track your browsing habits and help us understand which ads are effective. By using advertising cookies, we can provide a more personalized advertising experience while respecting your privacy preferences.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">13. Cookie Security</h2>
+                    <p class="text-gray-600">We take the security of your data seriously and implement measures to protect your information from unauthorized access. While cookies themselves do not contain personal information, they can be used to link to personal data stored on our servers. We ensure that our cookie practices comply with industry standards to safeguard your privacy.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">14. Cookie Policy Updates</h2>
+                    <p class="text-gray-600">We may update our Cookie Policy periodically to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any significant changes by posting a notice on our website or by other means. We encourage you to review this Cookie Policy periodically to stay informed about our use of cookies and your options regarding cookies.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">15. Cookie Preferences</h2>
+                    <p class="text-gray-600">You can manage your cookie preferences through your browser settings. Most browsers allow you to refuse cookies or to alert you when cookies are being sent. However, if you choose to refuse cookies, you may not be able to use the full functionality of our website. We recommend that you keep cookies enabled to enhance your browsing experience.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">16. Cookie Consent Management Tools</h2>
+                    <p class="text-gray-600">We may provide tools on our website that allow you to manage your cookie preferences easily. These tools enable you to accept or decline specific types of cookies and to review the cookies currently in use. We are committed to providing transparency and control over your cookie preferences.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">17. Cookie Policy for Mobile Devices</h2>
+                    <p class="text-gray-600">Our Cookie Policy applies to both desktop and mobile devices. If you access our website from a mobile device, you can manage your cookie preferences through your mobile browser settings. We ensure that our cookie practices are consistent across all devices to provide a seamless user experience.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">18. Cookie Policy for Different Regions</h2>
+                    <p class="text-gray-600">Our Cookie Policy may vary based on regional regulations and laws. We strive to comply with applicable laws regarding cookie usage and user consent in different jurisdictions. If you have questions about how our cookie practices apply to your region, please contact us for more information.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">19. Cookie Policy for Third-Party Services</h2>
+                    <p class="text-gray-600">We may use third-party services that also utilize cookies. These services may have their own cookie policies, and we encourage you to review them. We are not responsible for the practices of third-party services, and we recommend that you familiarize yourself with their cookie policies to understand how they use cookies.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">20. Cookie Policy for Social Media</h2>
+                    <p class="text-gray-600">If you interact with our content on social media platforms, those platforms may use cookies to track your activity. We encourage you to review the cookie policies of the social media platforms you use to understand how they handle cookies and your data. We are not responsible for the cookie practices of third-party social media platforms.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">21. Cookie Policy for Analytics Services</h2>
+                    <p class="text-gray-600">We may use analytics services that utilize cookies to help us understand user behavior on our website. These services provide insights into how users interact with our site, allowing us to make data-driven decisions for improvements. We ensure that any analytics services we use comply with applicable privacy regulations.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">22. Cookie Policy for Advertising Partners</h2>
+                    <p class="text-gray-600">We may partner with advertising networks that use cookies to deliver targeted advertisements. These partners may track your browsing behavior across different websites to provide personalized ads. We encourage you to review the cookie policies of our advertising partners to understand how they use cookies and your options for managing your preferences.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">23. Cookie Policy for Email Marketing</h2>
+                    <p class="text-gray-600">If you subscribe to our email marketing, we may use cookies to track your interactions with our emails. This helps us understand how our email campaigns perform and allows us to improve our content and targeting. You can manage your email preferences through the unsubscribe link in our emails.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">24. Cookie Policy for User Accounts</h2>
+                    <p class="text-gray-600">If you create an account on our website, we may use cookies to remember your login information and preferences. This enhances your user experience by allowing you to access your account without having to log in each time. You can manage your account settings and cookie preferences through your account dashboard.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">25. Cookie Policy for E-commerce</h2>
+                    <p class="text-gray-600">If you make purchases on our website, we may use cookies to track your shopping cart and order history. This ensures a smooth checkout process and allows us to provide personalized recommendations based on your purchase history. We take your privacy seriously and ensure that your data is protected during transactions.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">26. Cookie Policy for Feedback and Surveys</h2>
+                    <p class="text-gray-600">We may use cookies to track responses to feedback forms and surveys. This helps us analyze user feedback and improve our services based on your input. Your responses are valuable to us, and we appreciate your participation in helping us enhance our offerings.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">27. Cookie Policy for Content Personalization</h2>
+                    <p class="text-gray-600">We may use cookies to personalize the content you see on our website based on your interests and preferences. This enhances your browsing experience by providing relevant information and recommendations. You can manage your content preferences through your account settings or browser settings.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">28. Cookie Policy for User Experience Testing</h2>
+                    <p class="text-gray-600">We may conduct user experience testing that utilizes cookies to gather data on how users interact with our website. This information helps us identify areas for improvement and optimize the user experience. Participation in user experience testing is voluntary, and you can opt out at any time.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">29. Cookie Policy for A/B Testing</h2>
+                    <p class="text-gray-600">We may use cookies for A/B testing to compare different versions of our website and determine which performs better. This helps us make data-driven decisions about design and functionality. Your participation in A/B testing is anonymous, and we do not collect personal information during this process.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">30. Cookie Policy for Performance Monitoring</h2>
+                    <p class="text-gray-600">We may use cookies to monitor the performance of our website and identify any technical issues. This allows us to ensure that our website runs smoothly and efficiently. If you experience any issues while using our site, please contact us so we can address them promptly.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">31. Cookie Policy for Security Monitoring</h2>
+                    <p class="text-gray-600">We may use cookies to enhance the security of our website and protect against fraudulent activity. These cookies help us identify suspicious behavior and take appropriate action to safeguard your data. We are committed to maintaining a secure online environment for our users.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">32. Cookie Policy for Data Retention</h2>
+                    <p class="text-gray-600">We retain cookie data for as long as necessary to fulfill the purposes outlined in this Cookie Policy. We regularly review our data retention practices to ensure compliance with applicable regulations. If you have questions about our data retention policies, please contact us for more information.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">33. Cookie Policy for Data Sharing</h2>
+                    <p class="text-gray-600">We do not sell or rent your personal information to third parties. However, we may share cookie data with trusted partners for the purposes outlined in this Cookie Policy. We ensure that any third parties we work with adhere to strict privacy and security standards.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">34. Cookie Policy for International Transfers</h2>
+                    <p class="text-gray-600">If you are located outside of the United States, please be aware that your information, including cookie data, may be transferred to and processed in the United States. We take appropriate measures to ensure that your data is handled in accordance with applicable privacy laws.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">35. Cookie Policy for User Rights</h2>
+                    <p class="text-gray-600">You have certain rights regarding your personal information, including the right to access, correct, or delete your data. If you would like to exercise any of these rights, please contact us. We are committed to respecting your rights and ensuring your privacy.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">36. Cookie Policy for Opt-Out Options</h2>
+                    <p class="text-gray-600">You can opt out of targeted advertising by adjusting your preferences in your account settings or through the settings of the advertising networks we work with. We respect your choices and will honor your opt-out requests. Please note that opting out may not eliminate all advertising but will reduce the personalization of ads you see.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">37 . Cookie Policy for User Consent</h2>
+                    <p class="text-gray-600">We prioritize user consent in our cookie practices. Before placing non-essential cookies on your device, we will seek your explicit consent. You can provide or withdraw your consent at any time through your browser settings or by using the cookie management tools we provide on our website. We are committed to transparency and ensuring that you have control over your cookie preferences.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">38. Cookie Policy for Data Breaches</h2>
+                    <p class="text-gray-600">In the event of a data breach involving cookie data, we will notify affected users promptly and take appropriate measures to mitigate any potential harm. We have implemented security protocols to protect your data and minimize the risk of breaches. Your privacy and security are our top priorities.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">39. Cookie Policy for User Education</h2>
+                    <p class="text-gray-600">We believe in educating our users about cookies and their implications for privacy. We provide resources and information on our website to help you understand how cookies work and how to manage them effectively. If you have questions or need assistance, please do not hesitate to reach out to us.</p>
+                </div>
+                
+                <div class="cookie-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">40. Final Thoughts on Cookies</h2>
+                    <p class="text-gray-600">Cookies play a vital role in enhancing your online experience. At Growverge, we are committed to using cookies responsibly and transparently. We encourage you to review our Cookie Policy regularly and to reach out with any questions or concerns. Thank you for trusting us with your online experience!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Consent Dialog -->
+    <div class="cookie-consent">
+        <div>
+            <p class="text-sm">We use cookies to enhance your experience on our website. By clicking "Accept," you consent to our use of cookies. You can manage your preferences in your browser settings.</p>
+        </div>
+        <div class="flex justify-center mt-4">
+            <button class="btn-accept px-4 py-2 rounded-md mr-2" onclick="acceptCookies()">Accept</button>
+            <button class="btn-decline px-4 py-2 rounded-md" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">© 2023 Growverge. All rights reserved.</p>
+            <p class="text-sm">123 Greenway Drive, Garden City, ST 12345 | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <script>
+        function acceptCookies() {
+            document.querySelector('.cookie-consent').style.display = 'none';
+            // Logic to set cookies can be added here
+        }
+
+        function declineCookies() {
+            document.querySelector('.cookie-consent').style.display = 'none';
+            // Logic to decline cookies can be added here
+        }
+    </script>
+</body>
+</html>

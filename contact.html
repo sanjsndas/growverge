@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Growverge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a934a;
+            --secondary: #7ab97a;
+            --accent: #2e7d32;
+            --dark: #2e4a2e;
+            --light: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9f7;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a934a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .highlight {
+            background-color: #f0fff4;
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+        }
+        
+        .contact-form-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        
+        .contact-info-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i> Growverge
+                        </a>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex space-x-8">
+                              <a href="index.html" tabindex="0">Home</a>
+                           <a href="privacy.html" tabindex="0">Privacy</a>
+                           <a href="terms.html" tabindex="0">Terms & conditons</a>
+                           <a href="cookies.html"tabindex="0">Cookies</a>
+                           <a href="contact.html" tabindex="0"aria-current="page">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md text-sm font-medium flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round", stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Home</a>
+                <a href="privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Privacy</a>
+                <a href="terms.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Terms</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-800 bg-green-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact Our Team</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">We're here to help with all your gardening and landscaping needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="contact-form-container">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h2>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input type="text" id="first-name" name="first-name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500">
+                                <option value="general">General Inquiry</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="quote">Request a Quote</option>
+                                <option value="maintenance">Maintenance Service</option>
+                                <option value="design">Design Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="privacy-policy" name="privacy-policy" type="checkbox" required class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                            <label for="privacy-policy" class="ml-2 block text-sm text-gray-700">
+                                I agree to the <a href="privacy.html" class="text-green-600 hover:text-green-800">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md text-lg font-semibold">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                    <div class="space-y-6">
+                        <div class="contact-info-card">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-green-700"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-800">Visit Our Office</h3>
+                                    <p class="mt-1 text-gray-600">123 Greenway Drive, Garden City, ST 12345</p>
+                                    <p class="mt-2"><a href="#" class="text-green-700 hover:text-green-800 font-medium flex items-center"><i class="fas fa-directions mr-2"></i> Get Directions</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full">
+                                    <i class="fas fa-phone-alt text-green-700"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-800">Call Us</h3>
+                                    <p class="mt-1 text-gray-600">Main: (123) 456-7890</p>
+                                    <p class="text-gray-600">Support: (123) 456-7891</p>
+                                    <p class="mt-2"><a href="tel:1234567890" class="text-green-700 hover:text-green-800 font-medium flex items-center"><i class="fas fa-phone mr-2"></i> Call Now</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full">
+                                    <i class="fas fa-envelope text-green-700"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-800">Email Us</h3>
+                                    <p class="mt-1 text-gray-600">General: info@growverge.com</p>
+                                    <p class="text-gray-600">Support: support@growverge.com</p>
+                                    <p class="mt-2"><a href="mailto:info@growverge.com" class="text-green-700 hover:text-green-800 font-medium flex items-center"><i class="fas fa-envelope mr-2"></i> Send Email</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-green-100 p-3 rounded-full">
+                                    <i class="fas fa-clock text-green-700"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-800">Business Hours</h3>
+                                    <p class="mt-1 text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose lg:prose-xl max-w-none">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-8">More Ways to Connect</h2>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">1. Scheduling Consultations</h3>
+                    <p class="text-gray-600">We offer free initial consultations to assess your gardening and landscaping needs. Consultations typically last 30-45 minutes and can be scheduled online, by phone, or via our contact form. Our experts will visit your property to evaluate your space, discuss your vision, and provide preliminary recommendations. Consultations are the first step toward creating a customized plan for your outdoor space. Please have any relevant property information available for discussion.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">2. Requesting Quotes</h3>
+                    <p class="text-gray-600">We provide detailed, written estimates for all our services. To request a quote, you can complete our online form, call our office, or email us with project details. Quotes are typically provided within 3-5 business days after we evaluate your project requirements. Please provide as much detail as possible about your needs to ensure an accurate estimate. Quotes are valid for 30 days from the date of issue and may be revised based on changing project specifications.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">3. Emergency Services</h3>
+                    <p class="text-gray-600">For urgent gardening emergencies such as storm damage, diseased plants requiring immediate attention, or irrigation system failures, we offer emergency response services . You can reach us by phone for immediate assistance, and we will prioritize your request based on the severity of the situation. Our team is trained to handle emergencies efficiently and effectively, ensuring that your landscape is restored as quickly as possible. Please provide clear details about the issue when you contact us to help us prepare for our visit.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">4. Follow-Up Services</h3>
+                    <p class="text-gray-600">After completing a project, we encourage clients to reach out for follow-up services. This may include maintenance checks, plant health assessments, or additional landscaping needs. Our team is available to discuss any concerns you may have and to provide ongoing support to ensure your landscape thrives. Regular follow-ups help us to maintain the quality of our work and address any issues that may arise post-installation.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">5. Community Engagement</h3>
+                    <p class="text-gray-600">We believe in giving back to the community. Growverge participates in local events, workshops, and educational programs to promote sustainable gardening practices. If you are interested in collaborating with us for community projects or events, please reach out. We are always looking for opportunities to engage with our community and share our passion for gardening and landscaping.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">6. Social Media Interaction</h3>
+                    <p class="text-gray-600">Connect with us on social media platforms to stay updated on our latest projects, tips, and promotions. We actively engage with our followers and encourage you to share your gardening experiences with us. Social media is a great way to ask questions, share photos of your garden, and participate in our online community. Follow us on Facebook, Instagram, and Twitter for inspiration and updates.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">7. Customer Feedback</h3>
+                    <p class="text-gray-600">Your feedback is invaluable to us. After using our services, we encourage you to share your thoughts through our feedback form or directly via email. We use customer feedback to improve our services and ensure we meet your expectations. Positive or constructive, your input helps us grow and serve you better. We appreciate your time and effort in helping us enhance our offerings.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">8. Newsletter Subscription</h3>
+                    <p class="text-gray-600">Stay informed about our latest news, tips, and special offers by subscribing to our newsletter. You can sign up on our website, and we promise to keep your information confidential. Our newsletters are sent out monthly and include valuable gardening advice, seasonal tips, and exclusive promotions for our subscribers. Don’t miss out on the opportunity to enhance your gardening knowledge!</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">9. Workshops and Events</h3>
+                    <p class="text-gray-600">We host various workshops and events throughout the year, focusing on different aspects of gardening and landscaping. These events are designed for all skill levels and provide hands-on experience and expert guidance. If you are interested in attending or would like to suggest a topic for a future workshop, please contact us. We love sharing our knowledge and helping others develop their gardening skills.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">10. Sustainability Practices</h3>
+                    <p class="text-gray-600">At Growverge, we are committed to sustainable gardening practices. We encourage our clients to adopt eco-friendly methods and provide resources to help you make informed decisions about your landscape. If you have questions about sustainable gardening or want to learn more about our practices, please reach out. We are passionate about protecting the environment while creating beautiful outdoor spaces.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">11. Seasonal Tips</h3>
+                    <p class="text-gray-600">Each season brings unique challenges and opportunities for your garden. We provide seasonal tips and advice to help you prepare your landscape for changing weather conditions. Whether it’s winterizing your garden or preparing for spring planting, our team is here to guide you. Sign up for our newsletter or follow us on social media for timely tips and reminders.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">12. Plant Selection Guidance</h3>
+                    <p class="text-gray-600">Choosing the right plants for your landscape can be overwhelming. Our experts are available to help you select plants that thrive in your local climate and fit your aesthetic preferences. We consider factors such as soil type, sunlight, and water availability when making recommendations. Contact us for personalized plant selection advice tailored to your specific needs.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">13. Landscape Design Services</h3>
+                    <p class="text-gray-600">Our landscape design services are tailored to create beautiful and functional outdoor spaces. We work closely with you to understand your vision and preferences, ensuring that the final design reflects your style. From concept to completion, our team is dedicated to bringing your dream landscape to life. Schedule a consultation to discuss your design ideas with us.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">14. Maintenance Plans</h3>
+                    <p class="text-gray-600">Regular maintenance is essential for a healthy landscape. We offer customized maintenance plans to keep your garden looking its best year-round. Our services include lawn care, pruning, fertilization, and pest control. Contact us to learn more about our maintenance options and how we can help you maintain a vibrant outdoor space.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">15. Irrigation Solutions</h3>
+                    <p class="text-gray-600">Proper irrigation is crucial for plant health. We provide irrigation solutions tailored to your landscape’s needs, ensuring efficient water usage. Our team can design and install irrigation systems that conserve water while keeping your plants hydrated. If you have questions about your current irrigation setup or need a new system, reach out to us for assistance.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">16. Pest Management</h3>
+                    <p class="text-gray-600">Pest issues can quickly escalate if not addressed promptly. Our pest management services focus on identifying and treating pest problems while minimizing harm to beneficial insects and the environment. We use integrated pest management techniques to provide effective solutions. If you notice signs of pests in your garden, contact us for a consultation.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">17. Soil Testing Services</h3>
+                    <p class="text-gray-600">Understanding your soil is key to successful gardening. We offer soil testing services to analyze nutrient levels and pH balance, helping you make informed decisions about amendments and plant selection. Our team can provide recommendations based on the results to improve soil health and plant performance. Contact us to schedule a soil test for your garden.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">18. Hardscaping Services</h3>
+                    <p class="text-gray-600">In addition to landscaping, we offer hardscaping services to enhance your outdoor space. This includes patios, walkways, retaining walls, and more. Our team can help you design and install hardscape features that complement your landscape and provide functional outdoor living areas. Reach out to discuss your hardscaping ideas with us.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">19. Seasonal Cleanups</h3>
+                    <p class="text-gray-600">Seasonal cleanups are essential for maintaining a healthy landscape. We offer spring and fall cleanup services to remove debris, prune plants, and prepare your garden for the changing seasons. Our team will ensure your landscape is tidy and ready for the upcoming season. Contact us to schedule your seasonal cleanup today.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">20. Mulching Services</h3>
+                    <p class="text-gray-600">Mulching is an effective way to retain moisture, suppress weeds, and improve soil health. We offer mulching services to enhance the appearance of your garden beds while providing essential benefits to your plants. Our team can help you choose the right mulch for your landscape. Contact us to learn more about our mulching options.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">21. Tree Care Services</h3>
+                    <p class="text-gray-600">Trees are valuable assets to your landscape, and proper care is essential for their health. We offer tree care services including pruning, planting, and removal. Our certified arborists can assess the health of your trees and provide recommendations for care. If you have concerns about your trees, please reach out for a consultation.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">22. Landscape Lighting</h3>
+                    <p class="text-gray-600">Enhance the beauty of your landscape with professional lighting solutions. We offer landscape lighting design and installation to highlight your garden features and improve safety. Our team can create a lighting plan that suits your style and enhances your outdoor space. Contact us to discuss your landscape lighting needs.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">23. Greenhouse Services</h3>
+                    <p class="text-gray-600">For those interested in growing plants year-round, we offer greenhouse services. This includes design, installation, and maintenance of greenhouse structures. Our team can help you create a space that meets your gardening goals. If you’re considering a greenhouse, reach out to learn more about our services.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">24. Landscape Renovation</h3>
+                    <p class="text-gray-600">If your landscape needs a refresh, we offer renovation services to revitalize your outdoor space. This may include redesigning garden beds, replacing plants, or updating hardscape features. Our team will work with you to create a plan that meets your vision and budget. Contact us to discuss your landscape renovation project.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">25. Wildlife-Friendly Landscaping</h3>
+                    <p class="text-gray-600">We promote wildlife-friendly landscaping practices that support local ecosystems. This includes planting native species, creating habitats, and minimizing chemical use. If you’re interested in making your garden more wildlife-friendly, our team can provide guidance and recommendations. Contact us to learn more about our sustainable landscaping practices.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">26. Seasonal Planting Guides</h3>
+                    <p class="text-gray-600">Each season offers unique planting opportunities. We provide seasonal planting guides to help you choose the right plants for your garden throughout the year. Our guides include information on planting times, care requirements, and design ideas. If you’re looking for planting advice, reach out to us for personalized recommendations.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">27. Lawn Care Programs</h3>
+                    <p class="text-gray-600">Healthy lawns require regular care and attention. We offer comprehensive lawn care programs that include fertilization, aeration, overseeding, and pest control. Our team will assess your lawn’s needs and create a customized care plan. Contact us to learn more about our lawn care services and how we can help you achieve a lush, green lawn.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">28. Garden Design Workshops</h3>
+                    <p class="text-gray-600">Join us for our garden design workshops where you can learn the fundamentals of creating beautiful landscapes. These hands-on workshops cover topics such as plant selection, layout design, and maintenance tips. Whether you’re a beginner or an experienced gardener, our workshops are designed to inspire and educate. Check our website for upcoming workshop dates and registration details.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">29. Collaborations with Local Businesses</h3>
+                    <p class="text-gray-600">We value partnerships with local businesses and organizations. If you’re interested in collaborating on projects or events, please reach out. We believe that working together strengthens our community and enhances the services we provide. Let’s explore how we can collaborate to create beautiful outdoor spaces.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">30. Gardening Resources</h3>
+                    <p class="text-gray-600">We provide a variety of gardening resources on our website, including articles, videos, and guides. These resources cover a wide range of topics to help you improve your gardening skills and knowledge. If you’re looking for specific information or resources, feel free to contact us, and we’ll be happy to assist you.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">31. Plant Care Workshops</h3>
+                    <p class="text-gray-600">Our plant care workshops focus on teaching you how to care for various types of plants, including indoor and outdoor varieties. These workshops cover watering, fertilization, pruning, and pest management techniques. Join us to enhance your plant care skills and ensure your plants thrive. Check our website for upcoming workshop schedules.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">32. Community Gardening Initiatives</h3>
+                    <p class="text-gray-600">We support community gardening initiatives that promote local food production and environmental stewardship. If you’re interested in starting a community garden or participating in existing projects, please reach out. We can provide guidance, resources, and support to help you succeed in your community gardening efforts.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">33. Seasonal Events and Promotions</h3>
+                    <p class="text-gray-600">Stay tuned for our seasonal events and promotions that offer special discounts and opportunities to engage with our services. We often host events that coincide with gardening seasons, providing you with the chance to learn and save. Follow us on social media or subscribe to our newsletter to stay informed about upcoming events.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">34. Gardening Challenges</h3>
+                    <p class="text-gray-600">We understand that gardening can come with its challenges. If you’re facing specific issues in your garden, don’t hesitate to reach out for advice. Our team is here to help you troubleshoot problems and find effective solutions. Whether it’s pest control, plant health, or design dilemmas, we’re ready to assist you.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">35. Eco-Friendly Practices</h3>
+                    <p class="text-gray-600">We are committed to promoting eco-friendly gardening practices that benefit both your landscape and the environment. Our team can provide guidance on sustainable gardening techniques, including organic pest control, water conservation, and native plant selection. If you’re interested in making your garden more sustainable, contact us for personalized advice.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">36. Planting for Pollinators</h3>
+                    <p class="text-gray-600">Creating a pollinator-friendly garden is essential for supporting local ecosystems. We can help you select plants that attract bees, butterflies, and other beneficial insects. Our team can provide guidance on designing a garden that supports pollinator health and biodiversity. Contact us to learn more about planting for pollinators.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">37. Landscape Maintenance Tips</h3>
+                    <p class="text-gray-600">Regular maintenance is key to a thriving landscape. We offer tips and best practices for maintaining your garden, including watering schedules, pruning techniques, and seasonal tasks. If you have specific questions about maintaining your landscape, feel free to reach out for personalized advice.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">38. Gardening for Health and Wellness</h3>
+                    <p class="text-gray-600">Gardening has numerous health benefits, including stress relief and physical activity. We encourage our clients to engage in gardening as a way to improve their well-being and connect with nature. If you're interested in learning more about the health benefits of gardening or how to start your own garden for wellness, our team is here to provide guidance and support. We can help you design a garden that promotes relaxation and enjoyment, enhancing your overall quality of life.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">39. Gardening for Children</h3>
+                    <p class="text-gray-600">Introducing children to gardening can foster a love for nature and teach them valuable life skills. We offer resources and workshops designed for families to engage in gardening activities together. If you're interested in creating a family-friendly garden or need tips for involving children in gardening, please reach out for ideas and support.</p>
+                </div>
+                
+                <div class="contact-point">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">40. Final Thoughts</h3>
+                    <p class="text-gray-600">At Growverge, we are dedicated to providing exceptional gardening and landscaping services tailored to your needs. Whether you're looking for design, maintenance, or educational resources, our team is here to assist you every step of the way. We value your input and encourage you to reach out with any questions or concerns. Thank you for considering Growverge for your gardening needs!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm">© 2023 Growverge. All rights reserved.</p>
+            <p class="text-sm">123 Greenway Drive, Garden City, ST 12345 | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

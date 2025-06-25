@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Growverge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4a934a;
+            --secondary: #7ab97a;
+            --accent: #2e7d32;
+            --dark: #2e4a2e;
+            --light: #f1f8e9;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9f7;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('p1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234a934a' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .policy-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .highlight {
+            background-color: #f0fff4;
+            padding: 1rem;
+            border-left: 4px solid var(--accent);
+            margin: 1rem 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 leaf-pattern">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                            <i class="fas fa-leaf text-green-600 mr-2"></i> Growverge
+                        </a>
+                    </div>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex space-x-8">
+                             <a href="index.html" tabindex="0">Home</a>
+                           <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+                           <a href="terms.html" tabindex="0">Terms & conditons</a>
+                           <a href="cookies.html"tabindex="0">Cookies</a>
+                           <a href="contact.html" tabindex="0">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md text-sm font-medium flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i> Contact Us
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-green-800 focus:outline-none">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Home</a>
+                <a href="privacy.html" class="block px-3 py-2 rounded-md text-base font-medium text-green-800 bg-green-50">Privacy</a>
+                <a href="terms.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Terms</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-800 hover:bg-green-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="px-4 py-16 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Privacy Policy</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Your privacy is important to us. Learn how we collect, use, and protect your information.</p>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="prose lg:prose-xl max-w-none">
+                <p class="text-gray-600 mb-8">Last Updated: January 1, 2023</p>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">1. Introduction</h2>
+                    <p class="text-gray-600">Growverge is committed to protecting your privacy and ensuring that your personal information is collected and used properly, lawfully, and transparently. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By accessing or using our services, you agree to the collection and use of information in accordance with this policy.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">2. Information We Collect</h2>
+                    <p class="text-gray-600">We collect several types of information from and about users of our website, including personal information such as name, email address, phone number, and payment details. We also collect usage data, including IP addresses, browser types, pages visited, and time spent on pages to improve our services. Information may be collected directly from you when you provide it to us or automatically through cookies and tracking technologies as you navigate through the site.</p>
+                    <div class="highlight">
+                        <p><strong>Note:</strong> We only collect personal information that is necessary for the purposes of providing our services, improving user experience, and communicating with you about your account or our services.</p>
+                    </div>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">3. How We Use Your Information</h2>
+                    <p class="text-gray-600">We use the information we collect to provide, maintain, and improve our services, process transactions, communicate with you about your account or our services, personalize your experience, analyze site usage, and prevent fraud. Your information helps us respond to your customer service requests and support needs more efficiently. We may also use your information to contact you about products, services, and offerings that may be of interest to you.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">4. Information Sharing and Disclosure</h2>
+                    <p class="text-gray-600">Growverge does not sell, trade, or otherwise transfer your personally identifiable information to outside parties except as described in this policy. We may share information with trusted third parties who assist us in operating our website, conducting our business, or serving our users, so long as those parties agree to keep this information confidential. Information may be disclosed when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">5. Cookies and Tracking Technologies</h2>
+                    <p class="text-gray-600">We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier. They help us improve your experience, understand site usage, and improve content offerings. You can instruct your browser to refuse all cookies or indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our site.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">6. Data Security</h2>
+                    <p class="text-gray-600">We implement appropriate technical and organizational measures to protect the security of your personal information. We use encryption and secure server technologies to protect your data during transmission and storage. However, no method of transmission over the Internet or method of electronic storage is 100% secure, so we cannot guarantee absolute security. We regularly review our security procedures to consider appropriate new technology and methods to enhance our security measures.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">7. Third-Party Services</h2>
+                    <p class="text-gray-600">We may employ third-party companies and individuals to facilitate our services, provide services on our behalf, perform service-related services, or assist in analyzing how our services are used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. We carefully vet these third parties and require them to maintain confidentiality and security of your information.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">8. Data Retention</h2>
+                    <p class="text-gray-600">We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies. Retention periods vary depending on the type of information and the purposes for which we process the information, taking into account legal and regulatory requirements.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">9. Children's Privacy</h2>
+                    <p class="text-gray-600">Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us immediately. If we become aware that we have collected personal information from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+                </div>
+                
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">10. Your Privacy Rights</h2>
+                    <p class="text-gray-600">Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, update, or request deletion of your personal information. You can object to the processing of your personal information, ask us to restrict processing, or request portability of your personal information. To exercise these rights, please contact us using the information below. We will respond to your request within a reasonable timeframe.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">11. International Data Transfers</h2>
+                    <p class="text-gray-600">Your information, including personal data, may be transferred to and maintained on computers located outside of your state, province, country, or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. We will take all reasonable steps to ensure that your data is treated securely and in accordance with this privacy policy. Any transfers of your personal information will follow applicable data protection laws and will be safeguarded by appropriate technical and organizational measures.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">12. California Privacy Rights</h2>
+                    <p class="text-gray-600">California residents have specific rights regarding their personal information under the California Consumer Privacy Act (CCPA). These include the right to know what personal information is collected, used, shared, or sold; the right to delete personal information; the right to opt-out of the sale of personal information; and the right to non-discrimination for exercising CCPA rights. If you are a California resident and would like to exercise any of these rights, please contact us using the information provided below.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">13. GDPR Compliance</h2>
+                    <p class="text-gray-600">For users in the European Economic Area (EEA), we comply with the General Data Protection Regulation (GDPR). Under GDPR, you have the right to access, rectify, erase, and port your data, and the right to restrict and object to certain processing of your data. To exercise these rights, please contact us. Our legal basis for processing your data includes consent (where you have given it), contractual necessity, legal obligation, and legitimate interests (where not overridden by your rights and freedoms).</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">14. Do Not Track Signals</h2>
+                    <p class="text-gray-600">We currently do not respond to Do Not Track (DNT) browser signals as there is no industry standard for how to respond to these signals. We await the development and adoption of standards around DNT technology. In the meantime, we honor the privacy choices you make through your browser settings and through the opt-out mechanisms we provide for targeted advertising and analytics services.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">15. Links to Other Sites</h2>
+                    <p class="text-gray-600">Our website may contain links to other sites that are not operated by us. If you click on a third-party link, you will be directed to that third-party's site. We strongly advise you to review the privacy policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">16. Business Transfers</h2>
+                    <p class="text-gray-600">If Growverge is involved in a merger, acquisition, sale of assets, bankruptcy, or other change of control, your personal information may be transferred as part of that transaction. We will notify you via email and/or a prominent notice on our website of any suchchange in ownership or use of your personal information, as well as any choices you may have regarding your personal information. We will ensure that your information remains protected in accordance with this Privacy Policy.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">17. Changes to This Privacy Policy</h2>
+                    <p class="text-gray-600">We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">18. Contact Us</h2>
+                    <p class="text-gray-600">If you have any questions about this Privacy Policy, please contact us:</p>
+                    <p class="text-gray-600">Email: support@growverge.com</p>
+                    <p class="text-gray-600">Phone: (123) 456-7890</p>
+                    <p class="text-gray-600">Address: 40 E 7th St, New York, NY 10003, USA</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">19. User Consent</h2>
+                    <p class="text-gray-600">By using our website, you hereby consent to our Privacy Policy and agree to its terms. If you do not agree with any part of this Privacy Policy, you must not use our website or services.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">20. Data Breach Procedures</h2>
+                    <p class="text-gray-600">In the event of a data breach, we will notify you and any applicable regulator of a breach where we are legally required to do so. We will take all necessary steps to mitigate the effects of the breach and prevent future occurrences.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">21. Data Protection Officer</h2>
+                    <p class="text-gray-600">We have appointed a Data Protection Officer (DPO) who is responsible for overseeing compliance with this Privacy Policy and applicable data protection laws. You can contact our DPO at dpo@growverge.com for any inquiries regarding your personal data.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">22. Privacy Policy for Children</h2>
+                    <p class="text-gray-600">We are committed to protecting the privacy of children. We do not knowingly collect personal information from children under the age of 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information from our records.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">23. Your Rights Under GDPR</h2>
+                    <p class="text-gray-600">If you are a resident of the European Economic Area (EEA), you have certain data protection rights. Growverge aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data. If you wish to be informed about what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">24. Right to Access</h2>
+                    <p class="text-gray-600">You have the right to request copies of your personal data. We may charge you a small fee for this service. You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">25. Right to Erasure</h2>
+                    <p class="text-gray-600">You have the right to request that we erase your personal data, under certain conditions. You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">26. Right to Data Portability</h2>
+                    <p class="text-gray-600">You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">27. Right to Withdraw Consent</h2>
+                    <p class="text-gray-600">If we are relying on your consent to process your personal information, you have the right to withdraw that consent at any time. If you withdraw your consent, we may not be able to provide you with certain services.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">28. Changes to Your Personal Data</h2>
+                    <p class="text-gray-600">It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">29. Complaints</h2>
+                    <p class="text-gray-600">If you have any concerns about our use of your personal information, you can make a complaint to us using the contact details provided above. You also have the right to complain to a data protection authority about our collection and use of your personal data.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">30. Contact Information</h2>
+                    <p class="text-gray-600">If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <p class="text-gray-600">Email: support@growverge.com</p>
+                    <p class="text-gray-600">Phone: (123) 456-7890</p>
+                    <p class="text-gray-600">Address: 40 E 7th St, New York, NY 10003, USA</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">31. Legal Basis for Processing Personal Data</h2>
+                    <p class="text-gray-600">We will process your personal data only when we have a legal basis to do so. This includes processing your data when you have given consent, when we need to perform a contract with you, or when we have a legitimate interest in processing your data.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">32. Legitimate Interests</h2>
+                    <p class="text-gray-600">We may process your personal data when it is necessary for our legitimate interests and your interests and fundamental rights do not override those interests. This may include using your data for marketing purposes, improving our services, and ensuring the security of our systems.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">33. Data Protection Impact Assessments</h2>
+                    <p class="text-gray-600">We conduct data protection impact assessments when required to ensure that we are processing personal data in compliance with applicable laws and regulations. This helps us identify and mitigate any risks associated with our data processing activities.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">34. Data Breach Notification</h2>
+                    <p class="text-gray-600">In the event of a data breach, we will notify you and any applicable regulatory authority of a breach where we are legally required to do so. We will take all necessary steps to mitigate the effects of the breach and prevent future occurrences.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">35. Data Minimization</h2>
+                    <p class="text-gray-600">We will only collect personal data that is necessary for the purposes for which it is being processed. We will ensure that the data we collect is relevant and limited to what is necessary in relation to the purposes for which they are processed.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">36. Accuracy of Data</h2>
+                    <p class="text-gray-600">We will take reasonable steps to ensure that the personal data we hold is accurate and up to date. If you believe that any information we hold about you is incorrect or incomplete, please contact us.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">37. Right to Object</h2>
+                    <p class="text-gray-600">You have the right to object to our processing of your personal data under certain conditions. If you wish to exercise this right, please contact us using the information provided above.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">38. Right to Restrict Processing</h2>
+                    <p class="text-gray-600">You have the right to request that we restrict the processing of your personal data under certain conditions. If you wish to exercise this right, please contact us using the information provided above.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">39. Right to Withdraw Consent</h2>
+                    <p class="text-gray-600">If we are relying on your consent to process your personal information, you have the right to withdraw that consent at any time. If you withdraw your consent, we may not be able to provide you with certain services.</p>
+                </div>
+
+                <div class="policy-point">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">40. Conclusion</h2>
+                    <p class="text-gray-600">We are committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. If you have any questions or concerns about our Privacy Policy or our data practices, please do not hesitate to contact us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-6">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-white">© 2023 Growverge. All rights reserved.</p>
+            <p class="text-white">Address: 40 E 7th St, New York, NY 10003, USA</p>
+            <p class="text-white">Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>
